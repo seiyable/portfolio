@@ -5,37 +5,7 @@
 <title>curimo concept movie</title>
 <script type="text/javascript" src="http://s5884.com/portfolio/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="http://s5884.com/portfolio/js/jQueryRotate.2.1.js"></script>
-<script type="text/javascript">
-  var timerId;
-  var isRotating = false;
-  
-  $(document).ready(function(){  
-    $("img.ic-head").rotate({ 
-       bind: 
-         { 
-            mouseover : function() { 
-              isRotating = true;
-              rotateIcon();
-            },
-            mouseout : function() { 
-                isRotating = false;
-                if(timerId){ clearTimeout(timerId); timerId = null;};
-            }
-         } 
-    });
-  });
-  
-  var angle = 0;
-  function rotateIcon(){
-    angle += 60;
-    $("img.ic-head").rotate({animateTo:angle, duration:350, callback:function(){
-      if(isRotating){timerId = setTimeout(rotateIcon, 0);};
-    }
-   }); 
-  }
-  
-  
-</script>
+<script type="text/javascript" src="http://s5884.com/portfolio/js/rotate.js"></script>
 <script type="text/JavaScript" src="js/scrollsmoothly.js"></script>
 <link rel="stylesheet" type="text/css" media="screen, print" href="http://s5884.com/portfolio/css/reset.css" />
 <style type="text/css">
