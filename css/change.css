@@ -1,0 +1,75 @@
+/* * * * * *  background  * * * * * */
+.rainbow {
+  background: -moz-linear-gradient(left,
+    rgba(255,0,0,0.2),
+    rgba(255,69,0,0.2),
+    rgba(255,255,0,0.2),
+    rgba(0,128,0,0.2),
+    rgba(0,0,255,0.2),
+    rgba(75,0,130,0.2),
+    rgba(238,130,238,0.2)
+  );
+  background: -webkit-gradient(linear, left center, right center,
+    from(rgba(255,0,0,0.2)),
+    color-stop(14%, rgba(255,69,0,0.2)),
+    color-stop(28%, rgba(255,255,0,0.2)),
+    color-stop(42%, rgba(0,128,0,0.2)),
+    color-stop(56%, rgba(0,0,255,0.2)),
+    color-stop(70%, rgba(75,0,130,0.2)),
+    to(rgba(238,130,238,0.2))
+  );
+}
+
+
+/* * * * * *  contents  * * * * * */
+
+.explain {	
+  width: 700px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #444;
+  height:600px;
+  padding:300px 0;
+}
+.explain h2 {
+  text-decoration: underline;
+  font-size: 18px;
+}
+.explain p {
+  padding-bottom: 25px;
+  word-break: normal;
+  text-align: justify;
+}
+
+
+/*
+#sample01{
+	padding:0 0 300px 0;}
+#sample02 .box_in{
+	overflow:hidden;
+	width:800px;
+	margin:0 auto 60px;}
+#sample03{
+	background:url(images/wave.png) left bottom repeat-x;
+	padding:0;
+	margin:300px 0 0 0;}
+#sample03 .txt{
+	width:600px;
+	margin:0 auto;}
+#sample02 .txt{
+	float:left;
+	width:500px;
+	margin:0 0 0 20px;}
+#pict{
+	float:right;}	
+*/
+
+.arrow{
+	width:58px;
+	height:33px;
+	margin:0 auto;}
+
+
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>curimo concept movie</title>
+<script type="text/javascript" src="http://s5884.com/portfolio/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://s5884.com/portfolio/js/jQueryRotate.2.1.js"></script>
+<script type="text/javascript">
+  var timerId;
+  var isRotating = false;
+  
+  $(document).ready(function(){  
+    $("img.ic-head").rotate({ 
+       bind: 
+         { 
+            mouseover : function() { 
+              isRotating = true;
+              rotateIcon();
+            },
+            mouseout : function() { 
+                isRotating = false;
+                if(timerId){ clearTimeout(timerId); timerId = null;};
+            }
+         } 
+    });
+  });
+  
+  var angle = 0;
+  function rotateIcon(){
+    angle += 60;
+    $("img.ic-head").rotate({animateTo:angle, duration:350, callback:function(){
+      if(isRotating){timerId = setTimeout(rotateIcon, 0);};
+    }
+   }); 
+  }
+  
+  
+</script>
+<script type="text/JavaScript" src="js/scrollsmoothly.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, print" href="http://s5884.com/portfolio/css/reset.css" />
+<style type="text/css">
+ header { height: 20px; padding: 3px 20px; font-size: 12px; font-family: "Open Sans",serif; color: #bbb; background-color: #333; line-height: 2em;}
+ #underline{ height: 4px; background-color: rgb(173,239,42);}
+ /*
+ body {font-size: 26px; background: #5f5f5f url('http://s5884.com/portfolio/imgs/bg_curimo.png') repeat 0 0;}
+ */
+ body {font-size: 26px;}
+ 
+ #bg-wrapper { padding-bottom: 100px; }
+ #movie-wrapper { width: 640px; height: 500px; margin: 40px auto 0; }
+ video { box-shadow: 0 1px 14px #ccc; }
+ .ic-head {
+  float: left;
+ }
+.header-title p {
+  padding-top: 32px;
+  color: #877;
+  text-shadow: 1px 1px 1px #fff;
+ }
+ #movie-box { padding-top: 20px; }
+
+/*
+
+ #explain {	
+   width: 700px;
+   margin: 0 auto;
+   font-size: 14px;
+   color: #444;
+ }
+ #explain h2 {
+   text-decoration: underline;
+   font-size: 18px;
+ }
+ #explain01 p {
+   padding-bottom: 25px;
+   word-break: normal;
+   text-align: justify;
+ }
+ 
+ */
+ 
+ #author { float: right; color: #888; text-shadow: 1px 1px 1px rgb(173,239,42); padding-top: 20px; }
+ .red { text-shadow: #F9A7AC 0 0 15px; }
+ .yellow { text-shadow: #FDC264 0 0px 15px; }
+ .blue { text-shadow: #6DC8FA 0 0 15px;}
+ .emp { font-weight: bold; color: #777; }
+ .key-words { font-weight }
+ a.rel-link { color: #4DA2F7; cursor: help; }
+ .※ { font-size: 9px; color: #999; float: right; }
+ .c,
+ .c:visited {
+    color: #fff;
+	font-size: 20px;
+	background-color: #5f5f5f;
+}
+ #homehome {
+    line-height: 0.5em;
+	}
+</style>
+<link rel="stylesheet" type="text/css" media="screen, print" href="http://s5884.com/portfolio/css/change.css">
+</head>
+<body class="rainbow">
+  <header>s5884.com</header>
+  <div id="underline"></div>
+  <div id="movie-wrapper">
+    <article id="movie-wrapper">
+    <img class="ic-head" src="http://s5884.com/portfolio/imgs/ic-hex.png"/>
+    <span class="header-title"><p>Curimo Concept Movie</p></span>
+    <div id="movie-box">  
+      <video controls poster="http://s5884.com/portfolio/imgs/logo.png" width="640" height="360" margin="0 30px">
+        <source src="http://s5884.com/portfolio/movies/Curimo_English.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <p>Check if your browser supports HTML5 video.</p>
+      </video>
+    </div>
+    <p class="※">*only for chrome and safari</p>
+    <p class="arrow"><a href="#explain01"><img src="imgs/arrow.png" width="58" height="33" alt="下へ" /></a></p>
+    </article>
+    
+    <article id="explain01" class="explain">
+      <h2 class="red">Project Theme:</h2>
+      <p>A Design of Future Partner Mobility That Draws Empathic Interactions</p>
+    <p class="arrow"><a href="#explain02"><img src="imgs/arrow.png" width="58" height="33" alt="下へ" /></a></p>
+    </article>
+    <article id="explain02" class="explain">           
+      <h2 class="yellow">Background of This Project:</h2>
+      <p>This “Robotic Service Design (RSD)” project is launched by economics professor <a class="rel-link" href="http://web.econ.keio.ac.jp/staff/takeyama/About_Me.html" title="see his profile">Masanao Takeyama</a> in Keio University and <a href="http://www.tytlabs.co.jp/eindex.html" class="rel-link" title="see this site:)">Toyota Central R&amp;D Labs, Inc.</a> We conduct research activities from the perspective of the users aimed to depict how robot technologies will be used 15 years from now.
+      Especially, we focus on the possibilities that will bring the spread of personal mobility in the near future. By integrating robotic technologies, we attempt to propose an unprecedented fascinating urban mobility-life.</p>
+    <p class="arrow"><a href="#explain03"><img src="imgs/arrow.png" width="58" height="33" alt="下へ" /></a></p>
+    </article>
+    
+    <article id="explain03" class="explain">  
+      <h2 class="blue">Concept of Our Proposal:</h2>
+      	<p>	The past robots are recognized as the image of “smart machines that can be entrusted human tasks to”. There is a history of technological innovation that human have demanded to be released themselves from some sort of labor on the background.
+      	However, in our RSD project, we consider the robotics not as the technology that does something to help us, but rather as <span class="emp blue">the technology that skillfully leverages human being abilities.</span> Human being have a habit that they cannot help but sense “life” and its “intention” to something moving; therefore, by utilizing the habit, we expect the possibilities of robotics could let human beings to empathize with robots, and lead to new behaviors for human beings.</p>
+      <div id="author">Seiya Kobayashi All Rights Reserved.</div>
+    </article>
+  </div>
+ </body>
+</html>
